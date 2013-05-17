@@ -1,0 +1,61 @@
+*** ./smali/android/graphics/drawable/AnimationDrawable$AnimationState.smali	2013-05-06 10:08:14.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/graphics/drawable/AnimationDrawable$AnimationState.smali	2013-05-06 10:10:30.000000000 +0200
+***************
+*** 1,15 ****
+! .class final Landroid/graphics/drawable/AnimationDrawable$AnimationState;
+  .super Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
+  .source "AnimationDrawable.java"
+  
+  
+  # annotations
+  .annotation system Ldalvik/annotation/EnclosingClass;
+      value = Landroid/graphics/drawable/AnimationDrawable;
+  .end annotation
+  
+  .annotation system Ldalvik/annotation/InnerClass;
+!     accessFlags = 0x1a
+      name = "AnimationState"
+  .end annotation
+  
+--- 1,19 ----
+! .class public final Landroid/graphics/drawable/AnimationDrawable$AnimationState;
+  .super Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
+  .source "AnimationDrawable.java"
+  
+  
+  # annotations
++ .annotation build Landroid/annotation/MiuiHook;
++     value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_ACCESS:Landroid/annotation/MiuiHook$MiuiHookType;
++ .end annotation
++ 
+  .annotation system Ldalvik/annotation/EnclosingClass;
+      value = Landroid/graphics/drawable/AnimationDrawable;
+  .end annotation
+  
+  .annotation system Ldalvik/annotation/InnerClass;
+!     accessFlags = 0x1c
+      name = "AnimationState"
+  .end annotation
+  
+***************
+*** 171,173 ****
+--- 175,193 ----
+  
+      return-object v0
+  .end method
++ 
++ .method setDuration(II)V
++     .locals 1
++     .parameter "frame"
++     .parameter "value"
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
++ 
++     .prologue
++     iget-object v0, p0, Landroid/graphics/drawable/AnimationDrawable$AnimationState;->mDurations:[I
++ 
++     aput p2, v0, p1
++ 
++     return-void
++ .end method

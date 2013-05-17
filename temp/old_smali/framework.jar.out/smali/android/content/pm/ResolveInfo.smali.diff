@@ -1,0 +1,66 @@
+*** ./smali/android/content/pm/ResolveInfo.smali	2013-05-06 10:08:06.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/content/pm/ResolveInfo.smali	2013-05-06 10:10:20.000000000 +0200
+***************
+*** 9,15 ****
+  # annotations
+  .annotation system Ldalvik/annotation/MemberClasses;
+      value = {
+!         Landroid/content/pm/ResolveInfo$DisplayNameComparator;
+      }
+  .end annotation
+  
+--- 9,16 ----
+  # annotations
+  .annotation system Ldalvik/annotation/MemberClasses;
+      value = {
+!         Landroid/content/pm/ResolveInfo$DisplayNameComparator;,
+!         Landroid/content/pm/ResolveInfo$Injector;
+      }
+  .end annotation
+  
+***************
+*** 634,639 ****
+--- 635,643 ----
+  .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
+      .locals 6
+      .parameter "pm"
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
+  
+      .prologue
+      iget-object v3, p0, Landroid/content/pm/ResolveInfo;->resolvePackageName:Ljava/lang/String;
+***************
+*** 650,656 ****
+  
+      const/4 v5, 0x0
+  
+!     invoke-virtual {p1, v3, v4, v5}, Landroid/content/pm/PackageManager;->getDrawable(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+  
+      move-result-object v2
+  
+--- 654,660 ----
+  
+      const/4 v5, 0x0
+  
+!     invoke-static {p0, p1, v3, v4, v5}, Landroid/content/pm/ResolveInfo$Injector;->getDrawable(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+  
+      move-result-object v2
+  
+***************
+*** 682,688 ****
+  
+      iget v4, p0, Landroid/content/pm/ResolveInfo;->icon:I
+  
+!     invoke-virtual {p1, v3, v4, v0}, Landroid/content/pm/PackageManager;->getDrawable(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+  
+      move-result-object v2
+  
+--- 686,692 ----
+  
+      iget v4, p0, Landroid/content/pm/ResolveInfo;->icon:I
+  
+!     invoke-static {p0, p1, v3, v4, v0}, Landroid/content/pm/ResolveInfo$Injector;->getDrawable(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+  
+      move-result-object v2
+  

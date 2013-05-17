@@ -1,0 +1,141 @@
+.class Lmiui/view/VolumePanel$6;
+.super Ljava/lang/Object;
+.source "VolumePanel.java"
+
+# interfaces
+.implements Landroid/view/animation/Animation$AnimationListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmiui/view/VolumePanel;->startVibrateAnimation()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# static fields
+.field private static final TOTAL_ANIMATION_TIMES:I = 0x4
+
+
+# instance fields
+.field private mAnimationTimes:I
+
+.field private mCurrentFrame:I
+
+.field final synthetic this$0:Lmiui/view/VolumePanel;
+
+.field final synthetic val$rotationAnimation:[Landroid/view/animation/RotateAnimation;
+
+
+# direct methods
+.method constructor <init>(Lmiui/view/VolumePanel;[Landroid/view/animation/RotateAnimation;)V
+    .locals 0
+    .parameter
+    .parameter
+
+    .prologue
+    iput-object p1, p0, Lmiui/view/VolumePanel$6;->this$0:Lmiui/view/VolumePanel;
+
+    iput-object p2, p0, Lmiui/view/VolumePanel$6;->val$rotationAnimation:[Landroid/view/animation/RotateAnimation;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationEnd(Landroid/view/animation/Animation;)V
+    .locals 4
+    .parameter "animation"
+
+    .prologue
+    const/4 v1, 0x2
+
+    const/4 v3, 0x1
+
+    iget v0, p0, Lmiui/view/VolumePanel$6;->mCurrentFrame:I
+
+    .local v0, frame:I
+    if-eqz v0, :cond_0
+
+    if-ne v0, v1, :cond_4
+
+    :cond_0
+    iget v1, p0, Lmiui/view/VolumePanel$6;->mAnimationTimes:I
+
+    const/4 v2, 0x4
+
+    if-gt v1, v2, :cond_1
+
+    iget-object v1, p0, Lmiui/view/VolumePanel$6;->this$0:Lmiui/view/VolumePanel;
+
+    #getter for: Lmiui/view/VolumePanel;->mIsAnimationCancel:Z
+    invoke-static {v1}, Lmiui/view/VolumePanel;->access$700(Lmiui/view/VolumePanel;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    :cond_1
+    const/4 v1, 0x3
+
+    iput v1, p0, Lmiui/view/VolumePanel$6;->mCurrentFrame:I
+
+    :cond_2
+    :goto_0
+    iget-object v1, p0, Lmiui/view/VolumePanel$6;->this$0:Lmiui/view/VolumePanel;
+
+    #getter for: Lmiui/view/VolumePanel;->mVolumeIcon:Landroid/widget/ImageView;
+    invoke-static {v1}, Lmiui/view/VolumePanel;->access$800(Lmiui/view/VolumePanel;)Landroid/widget/ImageView;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lmiui/view/VolumePanel$6;->val$rotationAnimation:[Landroid/view/animation/RotateAnimation;
+
+    iget v3, p0, Lmiui/view/VolumePanel$6;->mCurrentFrame:I
+
+    aget-object v2, v2, v3
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
+
+    return-void
+
+    :cond_3
+    iput v3, p0, Lmiui/view/VolumePanel$6;->mCurrentFrame:I
+
+    iget v1, p0, Lmiui/view/VolumePanel$6;->mAnimationTimes:I
+
+    add-int/lit8 v1, v1, 0x1
+
+    iput v1, p0, Lmiui/view/VolumePanel$6;->mAnimationTimes:I
+
+    goto :goto_0
+
+    :cond_4
+    if-ne v0, v3, :cond_2
+
+    iput v1, p0, Lmiui/view/VolumePanel$6;->mCurrentFrame:I
+
+    goto :goto_0
+.end method
+
+.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
+    .locals 0
+    .parameter "animation"
+
+    .prologue
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/view/animation/Animation;)V
+    .locals 0
+    .parameter "animation"
+
+    .prologue
+    return-void
+.end method

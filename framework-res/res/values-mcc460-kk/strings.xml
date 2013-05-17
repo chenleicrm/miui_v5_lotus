@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">Қолданбаға нақты орналасқан жерді анықтауға мүмкіндік береді. Бұл орналасқан жер ұялы байланыс мұнаралары мен WLAN байланысы сияқты желілік байланысты пайдалану арқылы орналасу қызметтерінен алады. Бұл орналасу қызметтері қосылып тұруы қажет және қолданбаны пайдалану үшін құрылғыда қол жетімді болуы қажет. Қолданбалар оны сіздің нақты орналасқан жеріңізді анықтау үшін пайдалануы мүмкін.</string>
+    <string name="permlab_accessWifiState">WLAN байланыстарын қарау</string>
+    <string name="permdesc_accessWifiState">"Қолданбаға WLAN  желілерінің қосылғаны және WLAN  құрылғыларының атауы сияқты WLAN  желілері туралы ақпаратты қарауға мүмкіндік береді."</string>
+    <string name="permlab_changeWifiState">WLAN байланысына қосылу және ажырау</string>
+    <string name="permdesc_changeWifiState">Қолданбаға WLAN қол жетімді нүктелеріне қосылуға және ажыратуа және WLAN желілерінде құрылғылар конфигурациясына өзгеріс енгізуге мүмкіндік береді.</string>
+    <string name="permlab_changeWifiMulticastState">WLAN топтық қабылдауды қосу</string>
+    <string name="permdesc_changeWifiMulticastState">Тек телефон ғана емес, қолданбаға барлық көп мекенжайлы жіберу арқылы WLAN желілерінде жіберілген жиынтықтарды алуға мүмкіндік береді. Бұл көп мекенжайлы емес режимге қарағанда қуатты көбірек пайдаланады.</string>
+    <string name="wifi_available_sign_in">WLAN желісіне тіркеліңіз</string>
+    <string name="wifi_watchdog_network_disabled">WLAN желісіне қосылу мүмкін болмады</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">Тікелей WLAN байланысын іске қосыңыз. Бұл WLAN клиент/гипернысанын өшіреді.</string>
+    <string name="wifi_p2p_failed_message">WLAN Direct іске қосу мүмкін болмады</string>
+    <string name="wifi_p2p_enabled_notification_title">WLAN Direct қосулы</string>
+    <string name="data_usage_wifi_limit_title">WLAN деректері өшірілді</string>
+    <string name="data_usage_wifi_limit_snoozed_title">WLAN деректер шегі асырылды</string>
+    <string name="ct_cplusw_notification_text">CT WLAN желісі қос-ған. Төлеу тур. ақп. алу үш. 10000 н/е жерг. дүк. хаб-ңыз.</string>
+    <string name="ct_cplusw_notification_title">Қытай телеком WLAN байлан.</string>
+    <string name="ct_cplusw_pppoe_connection_dialog_content">Қытай Телекомның WLAN желісіне байланысқан болуыңыз қажет. Ақылар туралы қосымша ақпарат алу үшін Қытай Телеком компаниясының тұтынушыларға қызмет көрсету бөліміне хабарласыңыз. Жалғастыру қажет пе?</string>
+    <string name="wifi_noncuncurrency_message">WLAN клиентін іске қосыңыз. Бұл WLAN Direct қызметін ажыратады.</string>
+    <string name="wifi_p2p_noncuncurrency_invite_message">Бұл бұрыннан бар кез келген WLAN байланысын жояды</string>
+    <string name="wifi_p2p_noncuncurrency_message">WLAN Direct қызметін іске қосыңыз. Бұл WLAN байланысын ажыратады.</string>
+</resources>

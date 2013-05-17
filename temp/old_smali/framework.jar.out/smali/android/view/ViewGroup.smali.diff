@@ -1,0 +1,113 @@
+*** ./smali/android/view/ViewGroup.smali	2013-05-06 10:08:00.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/view/ViewGroup.smali	2013-05-06 10:10:13.000000000 +0200
+***************
+*** 116,121 ****
+--- 116,127 ----
+      .end annotation
+  .end field
+  
++ .field mChildSequenceStateTaggingListener:Landroid/view/ViewGroup$ChildSequenceStateTaggingListener;
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_FIELD:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
++ .end field
++ 
+  .field final mChildTransformation:Landroid/view/animation/Transformation;
+  
+  .field private mChildren:[Landroid/view/View;
+***************
+*** 206,211 ****
+--- 212,223 ----
+  
+  .field protected mPersistentDrawingCache:I
+  
++ .field mTagChildrenSequenceState:Z
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_FIELD:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
++ .end field
++ 
+  .field private mTransition:Landroid/animation/LayoutTransition;
+  
+  .field private mTransitioningViews:Ljava/util/ArrayList;
+***************
+*** 545,550 ****
+--- 557,564 ----
+  
+      :cond_1
+      :goto_0
++     invoke-static {p0}, Landroid/view/ViewGroup$Injector;->tagChildSequenceState(Landroid/view/ViewGroup;)V
++ 
+      return-void
+  
+      :cond_2
+***************
+*** 1998,2003 ****
+--- 2012,2023 ----
+      .end local v2           #animateLayoutChanges:Z
+      .end local v3           #attr:I
+      :cond_1
++     invoke-static {p1, p2}, Landroid/view/ViewGroup$Injector;->initTagChildSequenceState(Landroid/content/Context;Landroid/util/AttributeSet;)Z
++ 
++     move-result v6
++ 
++     iput-boolean v6, p0, Landroid/view/ViewGroup;->mTagChildrenSequenceState:Z
++ 
+      invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
+  
+      return-void
+***************
+*** 2345,2350 ****
+--- 2365,2372 ----
+  
+      :cond_2
+      :goto_1
++     invoke-static {p0}, Landroid/view/ViewGroup$Injector;->tagChildSequenceState(Landroid/view/ViewGroup;)V
++ 
+      return-void
+  
+      :cond_3
+***************
+*** 2485,2490 ****
+--- 2507,2514 ----
+  
+      iput v4, p0, Landroid/view/ViewGroup;->mChildrenCount:I
+  
++     invoke-static {p0}, Landroid/view/ViewGroup$Injector;->tagChildSequenceState(Landroid/view/ViewGroup;)V
++ 
+      goto :goto_0
+  .end method
+  
+***************
+*** 10820,10825 ****
+--- 10844,10851 ----
+      invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->notifyChildOfDrag(Landroid/view/View;)Z
+  
+      :cond_1
++     invoke-static {p0}, Landroid/view/ViewGroup$Injector;->tagChildSequenceState(Landroid/view/ViewGroup;)V
++ 
+      return-void
+  
+      :cond_2
+***************
+*** 12200,12205 ****
+--- 12226,12244 ----
+  
+      return-void
+  .end method
++ 
++ .method public setChildSequenceStateTaggingListener(Landroid/view/ViewGroup$ChildSequenceStateTaggingListener;)V
++     .locals 0
++     .parameter "listener"
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
++ 
++     .prologue
++     iput-object p1, p0, Landroid/view/ViewGroup;->mChildSequenceStateTaggingListener:Landroid/view/ViewGroup$ChildSequenceStateTaggingListener;
++ 
++     return-void
++ .end method
+  
+  .method protected setChildrenDrawingCacheEnabled(Z)V
+      .locals 5

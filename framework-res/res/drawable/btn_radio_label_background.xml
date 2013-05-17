@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<somc:directional xmlns:somc="com.sonymobile">
+    <left-to-right drawable="@drawable/btn_radio_label_background_ltr" />
+    <right-to-left drawable="@drawable/btn_radio_label_background_rtl" />
+</somc:directional>

@@ -1,0 +1,40 @@
+*** LocalePicker.smali	2013-05-06 10:07:41.000000000 +0200
+--- LocalePicker.smali	2013-05-06 10:09:50.000000000 +0200
+***************
+*** 99,104 ****
+      move-result-object v13
+  
+      .local v13, locales:[Ljava/lang/String;
+      const v20, 0x1070007
+  
+      move-object/from16 v0, v16
+--- 103,114 ----
+      move-result-object v13
+  
+      .local v13, locales:[Ljava/lang/String;
++     move-object/from16 v0, v16
++ 
++     invoke-static {v0, v13}, Lmiui/util/ExtraLocalePicker;->filterLocale(Landroid/content/res/Resources;[Ljava/lang/String;)[Ljava/lang/String;
++ 
++     move-result-object v13
++ 
+      const v20, 0x1070007
+  
+      move-object/from16 v0, v16
+***************
+*** 389,394 ****
+      :cond_4
+      invoke-static {v12}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
+  
+      new-instance v20, Landroid/widget/ArrayAdapter;
+  
+      move-object/from16 v0, v20
+--- 399,406 ----
+      :cond_4
+      invoke-static {v12}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
+  
++     invoke-static {v12}, Lmiui/util/ExtraLocalePicker;->adjustLocaleOrder([Lcom/android/internal/app/LocalePicker$LocaleInfo;)V
++ 
+      new-instance v20, Landroid/widget/ArrayAdapter;
+  
+      move-object/from16 v0, v20

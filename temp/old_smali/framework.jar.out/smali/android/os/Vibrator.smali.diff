@@ -1,0 +1,19 @@
+*** ./smali/android/os/Vibrator.smali	2013-05-06 10:07:50.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/os/Vibrator.smali	2013-05-06 10:10:00.000000000 +0200
+***************
+*** 26,28 ****
+--- 26,39 ----
+  
+  .method public abstract vibrate([JI)V
+  .end method
++ 
++ .method public vibrateEx([B)V
++     .locals 0
++     .parameter "params"
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
++ 
++     .prologue
++     return-void
++ .end method

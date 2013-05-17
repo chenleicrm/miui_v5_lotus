@@ -1,0 +1,41 @@
+*** ./smali/android/media/MediaScanner.smali	2013-05-06 10:08:09.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/media/MediaScanner.smali	2013-05-06 10:10:24.000000000 +0200
+***************
+*** 11,17 ****
+          Landroid/media/MediaScanner$MediaBulkDeleter;,
+          Landroid/media/MediaScanner$MyMediaScannerClient;,
+          Landroid/media/MediaScanner$PlaylistEntry;,
+!         Landroid/media/MediaScanner$FileEntry;
+      }
+  .end annotation
+  
+--- 11,18 ----
+          Landroid/media/MediaScanner$MediaBulkDeleter;,
+          Landroid/media/MediaScanner$MyMediaScannerClient;,
+          Landroid/media/MediaScanner$PlaylistEntry;,
+!         Landroid/media/MediaScanner$FileEntry;,
+!         Landroid/media/MediaScanner$Injector;
+      }
+  .end annotation
+  
+***************
+*** 4135,4140 ****
+--- 4136,4153 ----
+      return-void
+  .end method
+  
++ .method getContext()Landroid/content/Context;
++     .locals 1
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
++ 
++     .prologue
++     iget-object v0, p0, Landroid/media/MediaScanner;->mContext:Landroid/content/Context;
++ 
++     return-object v0
++ .end method
++ 
+  .method makeEntryFor(Ljava/lang/String;)Landroid/media/MediaScanner$FileEntry;
+      .locals 14
+      .parameter "path"

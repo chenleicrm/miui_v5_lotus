@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorizable android:drawable="@drawable/semc_progressbar_indeterminate_holo8_colored" android:color="@color/semc_theme_accent_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

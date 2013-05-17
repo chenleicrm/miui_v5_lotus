@@ -1,0 +1,21 @@
+*** PackageParser.smali	2013-05-06 10:08:06.000000000 +0200
+--- PackageParser.smali	2013-05-06 10:10:20.000000000 +0200
+***************
+*** 9978,9983 ****
+      :cond_5
+      invoke-static {v1, v7}, Landroid/content/pm/PackageParser;->validateName(Ljava/lang/String;Z)Ljava/lang/String;
+  
+      move-result-object v0
+  
+      .local v0, nameError:Ljava/lang/String;
+--- 10011,10020 ----
+      :cond_5
+      invoke-static {v1, v7}, Landroid/content/pm/PackageParser;->validateName(Ljava/lang/String;Z)Ljava/lang/String;
+  
++     move-result-object v4
++ 
++     invoke-static {v1, v4}, Landroid/content/pm/PackageParser$Injector;->filterNameError(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
++ 
+      move-result-object v0
+  
+      .local v0, nameError:Ljava/lang/String;

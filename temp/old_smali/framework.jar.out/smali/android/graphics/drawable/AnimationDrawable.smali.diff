@@ -1,0 +1,40 @@
+*** ./smali/android/graphics/drawable/AnimationDrawable.smali	2013-05-06 10:08:14.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/graphics/drawable/AnimationDrawable.smali	2013-05-06 10:10:30.000000000 +0200
+***************
+*** 17,23 ****
+  
+  
+  # instance fields
+! .field private final mAnimationState:Landroid/graphics/drawable/AnimationDrawable$AnimationState;
+  
+  .field private mCurFrame:I
+  
+--- 17,23 ----
+  
+  
+  # instance fields
+! .field private mAnimationState:Landroid/graphics/drawable/AnimationDrawable$AnimationState;
+  
+  .field private mCurFrame:I
+  
+***************
+*** 211,216 ****
+--- 211,228 ----
+      return-void
+  .end method
+  
++ .method getAnimationState()Landroid/graphics/drawable/AnimationDrawable$AnimationState;
++     .locals 1
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
++ 
++     .prologue
++     iget-object v0, p0, Landroid/graphics/drawable/AnimationDrawable;->mAnimationState:Landroid/graphics/drawable/AnimationDrawable$AnimationState;
++ 
++     return-object v0
++ .end method
++ 
+  .method public getDuration(I)I
+      .locals 1
+      .parameter "i"

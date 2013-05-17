@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">"Autorise l'application à obtenir votre positionnement approximatif. Ce positionnement est obtenu de services de positionnement utilisant les sources de positionnement réseau comme les tours cellulaires et le WLAN. Ces services de positionnement doivent être disponibles et activés sur votre appareil pour que l'application puisse les utiliser. Les applications peuvent les utiliser pour déterminer votre positionnement approximatif."</string>
+    <string name="permlab_accessWifiState">"afficher l'état des connexions WLAN"</string>
+    <string name="permdesc_accessWifiState">"Autorise l'application à afficher des informations sur la réseautique WLAN, par exemple si un réseau WLAN est activé et le nom des appareils WLAN qui y sont connectés."</string>
+    <string name="permlab_changeWifiState">"se connecter au WLAN et s'en déconnecter"</string>
+    <string name="permdesc_changeWifiState">"Autorise une application à se connecter aux points d'accès WLAN et à s'en déconnecter, et à modifier la configuration de l'appareil en fonction des réseaux WLAN."</string>
+    <string name="permlab_changeWifiMulticastState">autoriser la réception WLAN multidiffusion</string>
+    <string name="permdesc_changeWifiMulticastState">"Autorise l'application à recevoir des paquets envoyés à tous les appareils d'un réseau WLAN utilisant des adresses multidiffusions, non seulement ceux destinés à votre téléphone. Cela utilisera une plus grande quantité d'énergie que le mode sans multidiffusion."</string>
+    <string name="wifi_available_sign_in">Se connecter au réseau WLAN</string>
+    <string name="wifi_watchdog_network_disabled">Connexion WLAN impossible</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">"Lancer WLAN Direct. Cette opération désactive le client/point d'accès WLAN."</string>
+    <string name="wifi_p2p_failed_message">Démarrage de WLAN Direct impossible</string>
+    <string name="wifi_p2p_enabled_notification_title">WLAN Direct activé</string>
+    <string name="tethered_notification_title">"Fonction modem ou point d'accès sans fil WLAN actif"</string>
+    <string name="data_usage_wifi_limit_title">Données WLAN désactivées</string>
+    <string name="data_usage_wifi_limit_snoozed_title">Limite de données WLAN dépassée</string>
+    <string name="ct_cplusw_notification_text">Réseau WLAN de CT connecté. Infos sur facturation à 10000 ou magasin local.</string>
+    <string name="ct_cplusw_notification_title">Conn. à China Telecom WLAN</string>
+    <string name="ct_cplusw_pppoe_connection_dialog_content">Vous serez connecté au réseau local sans fil de China Telecom. Pour des détails sur les frais, veuillez communiquer avec le service à la clientèle de China Telecom. Continuer?</string>
+    <string name="wifi_noncuncurrency_message">Démarrer le client WLAN; déconnectera WLAN Direct.</string>
+    <string name="wifi_p2p_noncuncurrency_invite_message">Déconnectera toute connexion WLAN existante</string>
+    <string name="wifi_p2p_noncuncurrency_message">Démarrer WLAN Direct; déconnectera la connexion WLAN.</string>
+</resources>

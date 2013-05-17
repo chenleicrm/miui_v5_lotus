@@ -1,0 +1,25 @@
+*** IIccPhoneBook.smali	2013-05-06 10:07:43.000000000 +0200
+--- IIccPhoneBook.smali	2013-05-06 10:09:53.000000000 +0200
+***************
+*** 15,20 ****
+  
+  
+  # virtual methods
+  .method public abstract getAdnRecordsInEf(I)Ljava/util/List;
+      .annotation system Ldalvik/annotation/Signature;
+          value = {
+--- 15,28 ----
+  
+  
+  # virtual methods
++ .method public abstract getAdnCapacity()I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
+  .method public abstract getAdnRecordsInEf(I)Ljava/util/List;
+      .annotation system Ldalvik/annotation/Signature;
+          value = {

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">Acessar a localização aproximada a partir de fornecedores de localização que utilizam fontes de rede como torres de celular e WLAN. Quando esses serviços de localização estão disponíveis e ligados, esta permissão possibilita que o aplicativo determine sua localização aproximada.</string>
+    <string name="permlab_accessWifiState">ver conexões WLAN</string>
+    <string name="permdesc_accessWifiState">Permite que o aplicativo acesse informações sobre redes WLAN, como a ativação do WLAN e o nome dos dispositivos WLAN conectados.</string>
+    <string name="permlab_changeWifiState">conectar e desconectar do WLAN</string>
+    <string name="permdesc_changeWifiState">Permite que o aplicativo conecte e desconecte dos pontos de acesso WLAN e faça alterações nas configurações do dispositivo para redes WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">permitir recebimento de multicast WLAN</string>
+    <string name="permdesc_changeWifiMulticastState">Permite que o aplicativo receba pacotes enviados para todos os dispositivos em uma rede WLAN usando endereços de difusão seletiva, e não apenas o telefone. Consome mais energia do que o modo não multicast.</string>
+    <string name="wifi_available_sign_in">Fazer login na rede WLAN</string>
+    <string name="wifi_watchdog_network_disabled">Não foi possível se conectar a redes WLAN</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">Iniciar o WLAN Direct. Isso desativará o ponto de acesso/cliente WLAN.</string>
+    <string name="wifi_p2p_failed_message">Não foi possível iniciar o WLAN Direct.</string>
+    <string name="wifi_p2p_enabled_notification_title">WLAN Direct ativado</string>
+    <string name="data_usage_wifi_limit_title">Dados WLAN desativados</string>
+    <string name="data_usage_wifi_limit_snoozed_title">Limite de dados WLAN excedido</string>
+</resources>

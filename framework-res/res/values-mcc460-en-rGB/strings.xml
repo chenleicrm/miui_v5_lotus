@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">Access approximate location from location providers using network sources such as mobile tower and WLAN. When these location services are available and turned on, this permission allows the app to determine your approximate location.</string>
+    <string name="permlab_accessWifiState">view WLAN connections</string>
+    <string name="permdesc_accessWifiState">Allows the app to view information about WLAN networking, such as whether WLAN is enabled and name of connected WLAN devices.</string>
+    <string name="permlab_changeWifiState">connect and disconnect from WLAN</string>
+    <string name="permdesc_changeWifiState">Allows the app to connect to and disconnect from WLAN access points and to make changes to device configuration for WLAN networks.</string>
+    <string name="permlab_changeWifiMulticastState">allow WLAN Multicast reception</string>
+    <string name="permdesc_changeWifiMulticastState">Allows the app to receive packets sent to all devices on a WLAN network using multicast addresses, not just your phone. It uses more power than the non-multicast mode.</string>
+    <string name="wifi_available_sign_in">Sign in to WLAN network</string>
+    <string name="wifi_watchdog_network_disabled">"Couldn't connect to WLAN"</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">Start WLAN Direct. This will turn off WLAN client/hotspot.</string>
+    <string name="wifi_p2p_failed_message">"Couldn't start WLAN Direct."</string>
+    <string name="wifi_p2p_enabled_notification_title">WLAN Direct is on</string>
+    <string name="data_usage_wifi_limit_title">WLAN data disabled</string>
+    <string name="data_usage_wifi_limit_snoozed_title">WLAN data limit exceeded</string>
+</resources>

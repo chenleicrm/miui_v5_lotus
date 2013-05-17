@@ -1,0 +1,23 @@
+*** ./smali/android/widget/Toast$TN.smali	2013-05-06 10:07:53.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/widget/Toast$TN.smali	2013-05-06 10:10:06.000000000 +0200
+***************
+*** 172,177 ****
+--- 172,189 ----
+  
+  
+  # virtual methods
++ .method getParams()Landroid/view/WindowManager$LayoutParams;
++     .locals 1
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
++ 
++     .prologue
++     iget-object v0, p0, Landroid/widget/Toast$TN;->mParams:Landroid/view/WindowManager$LayoutParams;
++ 
++     return-object v0
++ .end method
++ 
+  .method public handleHide()V
+      .locals 2
+  

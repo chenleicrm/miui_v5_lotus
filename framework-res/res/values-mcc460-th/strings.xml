@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">"อนุญาตให้แอปพลิเคชันนี้รับตำแหน่งที่ตั้ง
+โดยประมาณของคุณ ตำแหน่งที่ตั้งนี้จะ
+ได้รับมาจากบริการตำแหน่งที่ตั้งโดยใช้
+ต้นทางตำแหน่งที่ตั้งเครือข่าย เช่น 
+เสาสัญญาณมือถือ และ WLAN บริการ
+ตำแหน่งที่ตั้งเหล่านี้จะต้องเปิดใช้งาน
+และพร้อมใช้งานสำหรับอุปกรณ์ของคุณ
+เพื่อให้แอปพลิเคชันใช้บริการเหล่านั้นได้ 
+แอปพลิเคชันอาจจะใช้บริการนี้ในการ
+กำหนดตำแหน่งที่ตั้งของคุณโดยประมาณ"</string>
+    <string name="permlab_accessWifiState">ดูการเชื่อมต่อ WLAN</string>
+    <string name="permdesc_accessWifiState">"อนุญาตให้แอปพลิเคชันดูข้อมูลเกี่ยวกับ
+เครือข่าย WLAN เช่น เปิดใช้งาน WLAN อยู่หรือไม่ และชื่อของอุปกรณ์ WLAN ที่เชื่อมต่อ"</string>
+    <string name="permlab_changeWifiState">เชื่อมต่อและหยุดเชื่อมต่อ WLAN</string>
+    <string name="permdesc_changeWifiState">"อนุญาตให้แอปพลิเคชันเชื่อมต่อและหยุด
+เชื่อมต่อจากจุดเข้าใช้งาน WLAN และเปลี่ยนแปลงการกำหนดค่าอุปกรณ์
+สำหรับเครือข่าย WLAN"</string>
+    <string name="permlab_changeWifiMulticastState">อนุญาตให้รับ WLAN แบบหลายผู้รับ</string>
+    <string name="permdesc_changeWifiMulticastState">"อนุญาตให้แอปพลิเคชันรับแพ็คเก็ตที่ส่งไป
+ยังทุกอุปกรณ์บนเครือข่าย WLAN โดยใช้ที่อยู่มัลติแคสต์ ไม่ใช่เพียงโทรศัพท์ของคุณเท่านั้น ซึ่งจะใช้พลังงานมากกว่าในโหมดที่ไม่ใช่
+มัลติแคสต์"</string>
+    <string name="wifi_available_sign_in">ลงชื่อเข้าใช้เครือข่าย WLAN</string>
+    <string name="wifi_watchdog_network_disabled">ไม่สามารถเชื่อมต่อ WLAN</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">เริ่มการทำงาน WLAN Direct ซึ่งจะเป็นการปิดการทำงาน WLAN ไคลเอ็นต์/ฮอตสปอต</string>
+    <string name="wifi_p2p_failed_message">ไม่สามารถเริ่ม WLAN Direct ได้</string>
+    <string name="wifi_p2p_enabled_notification_title">WLAN Direct เปิดอยู่</string>
+    <string name="data_usage_wifi_limit_title">ปิดใช้ข้อมูล WLAN แล้ว</string>
+    <string name="data_usage_wifi_limit_snoozed_title">เกินขีดจำกัดข้อมูล WLAN แล้ว</string>
+    <string name="ct_cplusw_notification_text">"เชื่อมต่อ WLAN ของ CT แล้ว สำหรับข้อมูล
+เรียกเก็บเงิน ติดต่อ 10000 หรือร้านท้องถิ่น"</string>
+    <string name="ct_cplusw_notification_title">เชื่อมต่อ China Telecom WLAN</string>
+    <string name="ct_cplusw_pppoe_connection_dialog_content">คุณจะได้รับการเชื่อมต่อกับเครือข่าย WLAN ของ China Telecom สำหรับรายละเอียดเกี่ยวกับค่าบริการ โปรดติดต่อฝ่ายบริการลูกค้าของ China Telecom ดำเนินการต่อหรือไม่</string>
+    <string name="wifi_noncuncurrency_message">เริ่มต้นไคลเอ็นต์ WLAN โดยจะถอดการเชื่อมต่อ WLAN Direct</string>
+    <string name="wifi_p2p_noncuncurrency_invite_message">จะถอดการเชื่อมต่อการเชื่อมต่อ WLAN ที่มีอยู่ใดๆ</string>
+    <string name="wifi_p2p_noncuncurrency_message">เริ่มต้น WLAN Direct โดยจะถอดการเชื่อมต่อ WLAN</string>
+</resources>

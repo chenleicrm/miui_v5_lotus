@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">Permite a la aplicación acceder a la ubicación aproximada. Esta ubicación se obtiene de los proveedores de ubicación que utilizan fuentes de ubicación de red como torres de telefonía móvil y redes WLAN. Cuando estos servicios de ubicación están disponibles y activados en el dispositivo, la aplicación los utilizará para determinar la ubicación aproximada.</string>
+    <string name="permlab_accessWifiState">ver conexiones WLAN</string>
+    <string name="permdesc_accessWifiState">Permite que la aplicación vea información sobre conexión a redes WLAN (por ejemplo, si está habilitada la conexión WLAN y el nombre de los dispositivos WLAN conectados).</string>
+    <string name="permlab_changeWifiState">conectarse a redes WLAN y desconectarse</string>
+    <string name="permdesc_changeWifiState">Permite que la aplicación se conecte a puntos de acceso WLAN y se desconecte de ellos y que realice cambios en la configuración de redes WLAN del dispositivo.</string>
+    <string name="permlab_changeWifiMulticastState">permitir recepción multidifusión WLAN</string>
+    <string name="permdesc_changeWifiMulticastState">Permite que la aplicación reciba paquetes enviados a todos los dispositivos de una red WLAN que utilicen direcciones de multidifusión, no solo al móvil. Utiliza más batería que el modo de no multidifusión.</string>
+    <string name="wifi_available_sign_in">Iniciar sesión en red WLAN</string>
+    <string name="wifi_watchdog_network_disabled">No se pudo conectar a WLAN.</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">Iniciar WLAN Direct. Se desactivará el funcionamiento del área de conexión o del cliente WLAN.</string>
+    <string name="wifi_p2p_failed_message">No se pudo iniciar WLAN Direct.</string>
+    <string name="wifi_p2p_enabled_notification_title">WLAN Direct está activado</string>
+    <string name="tethered_notification_title">Conexión mediante módem USB o zona WLAN</string>
+    <string name="data_usage_wifi_limit_title">Datos WLAN deshabilitados</string>
+    <string name="data_usage_wifi_limit_snoozed_title">Límite de datos WLAN excedido</string>
+    <string name="ct_cplusw_notification_text">Red WLAN CT conect. Contacte con 10000 o tienda local para info. facturación.</string>
+    <string name="ct_cplusw_notification_title">WLAN China Telecom conect.</string>
+    <string name="ct_cplusw_pppoe_connection_dialog_content">Se conectará a la red WLAN de China Telecom. Para obtener información de las tarifas, póngase en contacto con el servicio de atención al cliente de China Telecom. ¿Continuar?</string>
+    <string name="wifi_noncuncurrency_message">Inicie el cliente WLAN. Esto desconectará WLAN Direct.</string>
+    <string name="wifi_p2p_noncuncurrency_invite_message">Esto desconectará cualquier conexión WLAN existente.</string>
+    <string name="wifi_p2p_noncuncurrency_message">Inicie el cliente WLAN. Esto desconectará la conexión WLAN.</string>
+</resources>

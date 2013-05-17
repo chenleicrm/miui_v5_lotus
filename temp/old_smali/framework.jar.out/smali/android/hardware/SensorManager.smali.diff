@@ -1,0 +1,15 @@
+*** ./smali/android/hardware/SensorManager.smali	2013-05-06 10:08:10.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/hardware/SensorManager.smali	2013-05-06 10:10:25.000000000 +0200
+***************
+*** 240,245 ****
+--- 240,249 ----
+      const v0, 0x3e42dcae
+  
+      .local v0, coef:F
++     invoke-static {p0}, Landroid/hardware/SensorManager$Injector;->getSeaLevelPressure(F)F
++ 
++     move-result p0
++ 
+      const v1, 0x472d2a00
+  
+      const/high16 v2, 0x3f80

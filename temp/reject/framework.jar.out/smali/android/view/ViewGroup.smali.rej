@@ -1,0 +1,23 @@
+*** ViewGroup.smali	2013-05-06 10:08:00.000000000 +0200
+--- ViewGroup.smali	2013-05-06 10:10:13.000000000 +0200
+***************
+*** 2012,2017 ****
+      .end local v2           #animateLayoutChanges:Z
+      .end local v3           #attr:I
+      :cond_1
+      invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
+  
+      return-void
+--- 2026,2037 ----
+      .end local v2           #animateLayoutChanges:Z
+      .end local v3           #attr:I
+      :cond_1
++     invoke-static {p1, p2}, Landroid/view/ViewGroup$Injector;->initTagChildSequenceState(Landroid/content/Context;Landroid/util/AttributeSet;)Z
++ 
++     move-result v6
++ 
++     iput-boolean v6, p0, Landroid/view/ViewGroup;->mTagChildrenSequenceState:Z
++ 
+      invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
+  
+      return-void

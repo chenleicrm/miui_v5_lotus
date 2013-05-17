@@ -1,0 +1,51 @@
+*** ./smali/com/android/internal/telephony/CallerInfoAsyncQuery$CallerInfoAsyncQueryHandler.smali	2013-05-06 10:07:46.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/com/android/internal/telephony/CallerInfoAsyncQuery$CallerInfoAsyncQueryHandler.smali	2013-05-06 10:09:55.000000000 +0200
+***************
+*** 93,98 ****
+--- 93,115 ----
+      return-object p1
+  .end method
+  
++ .method private doSpNumberAndAntiSpamQuery(Lcom/android/internal/telephony/CallerInfoAsyncQuery$CookieWrapper;I)V
++     .locals 3
++     .parameter "cw"
++     .parameter "token"
++ 
++     .prologue
++     iget-object v0, p0, Lcom/android/internal/telephony/CallerInfoAsyncQuery$CallerInfoAsyncQueryHandler;->mQueryContext:Landroid/content/Context;
++ 
++     iget-object v1, p1, Lcom/android/internal/telephony/CallerInfoAsyncQuery$CookieWrapper;->number:Ljava/lang/String;
++ 
++     iget-object v2, p0, Lcom/android/internal/telephony/CallerInfoAsyncQuery$CallerInfoAsyncQueryHandler;->mCallerInfo:Lcom/android/internal/telephony/CallerInfo;
++ 
++     invoke-static {v0, v1, v2}, Lmiui/telephony/CallerInfo;->doSpNumberQuery(Landroid/content/Context;Ljava/lang/String;Lcom/android/internal/telephony/CallerInfo;)Lcom/android/internal/telephony/CallerInfo;
++ 
++     return-void
++ .end method
++ 
+  
+  # virtual methods
+  .method protected createHandler(Landroid/os/Looper;)Landroid/os/Handler;
+***************
+*** 112,117 ****
+--- 129,137 ----
+      .parameter "token"
+      .parameter "cookie"
+      .parameter "cursor"
++     .annotation build Landroid/annotation/MiuiHook;
++         value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
++     .end annotation
+  
+      .prologue
+      const/4 v6, 0x3
+***************
+*** 269,274 ****
+--- 289,296 ----
+      iput-object v10, p0, Lcom/android/internal/telephony/CallerInfoAsyncQuery$CallerInfoAsyncQueryHandler;->mCallerInfo:Lcom/android/internal/telephony/CallerInfo;
+  
+      :cond_9
++     invoke-direct {p0, v8, p1}, Lcom/android/internal/telephony/CallerInfoAsyncQuery$CallerInfoAsyncQueryHandler;->doSpNumberAndAntiSpamQuery(Lcom/android/internal/telephony/CallerInfoAsyncQuery$CookieWrapper;I)V
++ 
+      iget-object v0, p0, Lcom/android/internal/telephony/CallerInfoAsyncQuery$CallerInfoAsyncQueryHandler;->mCallerInfo:Lcom/android/internal/telephony/CallerInfo;
+  
+      iget-object v0, v0, Lcom/android/internal/telephony/CallerInfo;->name:Ljava/lang/String;

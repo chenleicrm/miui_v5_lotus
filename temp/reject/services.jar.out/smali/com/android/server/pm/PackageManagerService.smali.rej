@@ -1,0 +1,40 @@
+*** PackageManagerService.smali	2013-05-06 10:07:36.000000000 +0200
+--- PackageManagerService.smali	2013-05-06 10:09:44.000000000 +0200
+***************
+*** 13686,13692 ****
+  
+      iget-object v3, v0, Lcom/android/server/pm/PackageManagerService;->mResolveActivity:Landroid/content/pm/ActivityInfo;
+  
+!     const v10, 0x10302f9
+  
+      iput v10, v3, Landroid/content/pm/ActivityInfo;->theme:I
+  
+--- 13752,13758 ----
+  
+      iget-object v3, v0, Lcom/android/server/pm/PackageManagerService;->mResolveActivity:Landroid/content/pm/ActivityInfo;
+  
+!     const v10, 0x60d003e
+  
+      iput v10, v3, Landroid/content/pm/ActivityInfo;->theme:I
+  
+***************
+*** 14665,14670 ****
+      .end local v23           #i:I
+      .end local v45           #renamed:Ljava/lang/String;
+      :cond_18
+      move-object/from16 v0, v41
+  
+      iget-object v3, v0, Lcom/android/server/pm/PackageSetting;->origPackage:Lcom/android/server/pm/PackageSettingBase;
+--- 14731,14742 ----
+      .end local v23           #i:I
+      .end local v45           #renamed:Ljava/lang/String;
+      :cond_18
++     move-object/from16 v0, p1
++ 
++     move-object/from16 v1, v41
++ 
++     invoke-static {v0, v1}, Lcom/android/server/pm/PackageManagerService$Injector;->addMiuiExtendFlags(Landroid/content/pm/PackageParser$Package;Lcom/android/server/pm/PackageSetting;)V
++ 
+      move-object/from16 v0, v41
+  
+      iget-object v3, v0, Lcom/android/server/pm/PackageSetting;->origPackage:Lcom/android/server/pm/PackageSettingBase;

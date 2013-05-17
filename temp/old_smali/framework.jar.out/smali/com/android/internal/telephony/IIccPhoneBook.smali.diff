@@ -1,0 +1,36 @@
+*** ./smali/com/android/internal/telephony/IIccPhoneBook.smali	2013-05-06 10:07:43.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/com/android/internal/telephony/IIccPhoneBook.smali	2013-05-06 10:09:53.000000000 +0200
+***************
+*** 15,20 ****
+--- 15,28 ----
+  
+  
+  # virtual methods
++ .method public abstract getAdnCapacity()I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
+  .method public abstract getAdnRecordsInEf(I)Ljava/util/List;
+      .annotation system Ldalvik/annotation/Signature;
+          value = {
+***************
+*** 37,42 ****
+--- 45,58 ----
+      .annotation system Ldalvik/annotation/Throws;
+          value = {
+              Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
++ .method public abstract getFreeAdn()I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
+          }
+      .end annotation
+  .end method

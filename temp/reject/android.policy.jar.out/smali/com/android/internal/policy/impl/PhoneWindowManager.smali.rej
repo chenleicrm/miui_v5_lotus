@@ -1,0 +1,19 @@
+*** PhoneWindowManager.smali	2013-05-06 10:08:21.000000000 +0200
+--- PhoneWindowManager.smali	2013-05-06 10:10:39.000000000 +0200
+***************
+*** 8490,8495 ****
+  
+      .restart local v8       #keyguardActive:Z
+      :cond_5
+      if-eqz v2, :cond_6
+  
+      move/from16 v0, p2
+--- 8557,8564 ----
+  
+      .restart local v8       #keyguardActive:Z
+      :cond_5
++     invoke-static/range {p0 .. p2}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->performReleaseHapticFeedback(Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/view/KeyEvent;I)V
++ 
+      if-eqz v2, :cond_6
+  
+      move/from16 v0, p2

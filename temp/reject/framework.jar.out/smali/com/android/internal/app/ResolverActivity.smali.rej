@@ -1,0 +1,19 @@
+*** ResolverActivity.smali	2013-05-06 10:07:41.000000000 +0200
+--- ResolverActivity.smali	2013-05-06 10:09:50.000000000 +0200
+***************
+*** 393,399 ****
+  
+      .prologue
+      .local p5, rList:Ljava/util/List;,"Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
+!     const v1, 0x1030302
+  
+      invoke-virtual {p0, v1}, Lcom/android/internal/app/ResolverActivity;->setTheme(I)V
+  
+--- 421,427 ----
+  
+      .prologue
+      .local p5, rList:Ljava/util/List;,"Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
+!     const v1, 0x60d003e
+  
+      invoke-virtual {p0, v1}, Lcom/android/internal/app/ResolverActivity;->setTheme(I)V
+  

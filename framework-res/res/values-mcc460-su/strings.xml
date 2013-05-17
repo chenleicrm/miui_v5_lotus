@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">Ngakses perkiraan lokasi ti operator lokasi make sumber jaringan menara seluler jeung WLAN. Lamun laden lokasi ieu sadia tur diaktipkeun, idin ieu ngidinan aplikasi nangtukeun perkiraan lokasi anjeun.</string>
+    <string name="permlab_accessWifiState">tempo sambungan WLAN</string>
+    <string name="permdesc_accessWifiState">Ngidinan aplikasi nempo inpormasi ngeunaan jaringan WLAN, kawas naha WLAN teh diaktipkeun jeung ngaran alat WLAN nu nyambung.</string>
+    <string name="permlab_changeWifiState">sambungkaun tur pegatkeun sambungan ti WLAN</string>
+    <string name="permdesc_changeWifiState">Ngidinan aplikasi nyambungkeun jeung megatkeun sambungan ti titik akses WLAN jang nyieun parobahan ka konpigurasi alat pikeun jaringan WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">idinan panampian WLAN Multicat</string>
+    <string name="permdesc_changeWifiMulticastState">Ngidinan aplikasi narima paket nu dikirim ka kabeh alat dina jaringan WLAN make alamat multicast, lain telepon anjeun wungkul. Ieu make leuwih loba daya tibatan modeu non-multicast.</string>
+    <string name="wifi_available_sign_in">Asup ka Jaringan WLAN</string>
+    <string name="wifi_watchdog_network_disabled">Teu bisa nyambung ka WLAN</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">Mimiti WLAN Direct. Ieu bakal mareuman klien/hotspot WLAN.</string>
+    <string name="wifi_p2p_failed_message">Teu bisa ngamimitian WLAN Direct</string>
+    <string name="wifi_p2p_enabled_notification_title">WLAN Direct aktip</string>
+    <string name="data_usage_wifi_limit_title">Data WLAN dinonaktipkeun</string>
+    <string name="data_usage_wifi_limit_snoozed_title">Watesan data WLAN geus kahontal</string>
+    <string name="ct_cplusw_notification_text">Jaringan WLAN CT nyambung. Kontak 10000 atawa toko lokal jang inpo tagihan.</string>
+    <string name="ct_cplusw_notification_title">WLAN China Telecom nyamb.</string>
+    <string name="ct_cplusw_pppoe_connection_dialog_content">Anjeun bakal nyambung ka jaringan WLAN China Telecom. Keur wincik ongkos, harep kontak pangladen langganan China Telecom. Teraskeun?</string>
+    <string name="wifi_noncuncurrency_message">Mimiti klien WLAN. Ieu bade pegat sambungan WLAN Direct.</string>
+    <string name="wifi_p2p_noncuncurrency_invite_message">Ieu bade pegat sambungan kabeh sambungan WLAN</string>
+    <string name="wifi_p2p_noncuncurrency_message">Mimiti WLAN Langsung. Ieu bade pegat sambungan WLAN.</string>
+</resources>

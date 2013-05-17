@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">Дозволува апликацијата да ја земе приближната локација. Локацијата се добива од услугите за локација што користат мрежни извори за локација како мобилна кула и WLAN. Овие услуги за локација мора да се достапни и вклучени во уредот за апликацијата да ги користи. Апликацијата може да го користи ова за да одреди каде сте приближно.</string>
+    <string name="permlab_accessWifiState">прикажи WLAN конекции</string>
+    <string name="permdesc_accessWifiState">Овозможува апликацијата да прикаже информации за WLAN мрежите, како што е дали WLAN е вклучена и името на поврзаните уреди WLAN.</string>
+    <string name="permlab_changeWifiState">поврзи се и исклучи од WLAN</string>
+    <string name="permdesc_changeWifiState">Овозможува апликацијата да се поврзе и да се исклучи од WLAN пристапни точки и да прави промени во конфигурацијата на уредот за WLAN мрежи.</string>
+    <string name="permlab_changeWifiMulticastState">"овозможи WLAN групен
+ прием"</string>
+    <string name="permdesc_changeWifiMulticastState">Овозможува апликацијата да прима пакети испратени до сите уреди на WLAN мрежа со помош на групни адреси, не само вашиот телефон. Користи повеќе енергија отколку не-групниот режим.</string>
+    <string name="wifi_available_sign_in">Пријавување на WLAN мрежа</string>
+    <string name="wifi_watchdog_network_disabled">Не може да се поврзе со WLAN</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">Вклучете ја WLAN Direct. Ова ќе ја исклучи WLAN клиент/\"жешко\" место.</string>
+    <string name="wifi_p2p_failed_message">Не може да се вклучи WLAN Direct</string>
+    <string name="wifi_p2p_enabled_notification_title">WLAN Direct е вклучен</string>
+    <string name="data_usage_wifi_limit_title">WLAN податоците се исклучени</string>
+    <string name="data_usage_wifi_limit_snoozed_title">Ограничувањето на WLAN податоци е надминато</string>
+    <string name="ct_cplusw_notification_text">CT WLAN мрежата е поврзана. Конт. го 10000 или лок. продав. за плат. инфор.</string>
+    <string name="ct_cplusw_notification_title">WLAN кон. од China Telecom.</string>
+    <string name="ct_cplusw_pppoe_connection_dialog_content">Ќе бидете поврзани со мрежа WLAN на China Telecom. За детали околу цената, контактирајте со услугата за корисниците на China Telecom. Да се продолжи?</string>
+    <string name="wifi_noncuncurrency_message">Вклучување WLAN client. Ова ќе го исклучи WLAN Direct.</string>
+    <string name="wifi_p2p_noncuncurrency_invite_message">Ова ќе ја исклучи постојната WLAN-конекција</string>
+    <string name="wifi_p2p_noncuncurrency_message">Вклучување WLAN Direct. Ова ќе ја исклучи WLAN-конекцијата.</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permdesc_accessCoarseLocation">للسماح للتطبيق بتحديد موقعك التقريبي. يستمد هذا الموقع من خدمات الموقع باستخدام مصادر المواقع التي تستخدم الشبكات مثل أبراج النقال وشبكة WLAN. يتعين توفر خدمات المواقع هذه وتشغيلها على جهازك للتطبيق كي يستخدمها. وقد تستخدم التطبيقات هذا لتحديد موقعك التقريبي.</string>
+    <string name="permlab_accessWifiState">عرض اتصالات WLAN</string>
+    <string name="permdesc_accessWifiState">للسماح للتطبيق بعرض معلومات حول شبكات WLAN، كعرض معلومات حول ما إذا تم تمكين WLAN واسم أجهزة WLAN المتصلة.</string>
+    <string name="permlab_changeWifiState">الاتصال بشبكة WLAN وقطع الاتصال بها</string>
+    <string name="permdesc_changeWifiState">للسماح للتطبيق بالاتصال بنقاط الوصول إلى WLAN وقطع الاتصال بها وإجراء تغييرات على تهيئة الجهاز لشبكات WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">السماح بتلقي بث WLAN المتعدد</string>
+    <string name="permdesc_changeWifiMulticastState">للمساح للتطبيق بتلقي الحزم التي يتم إرسالها إلى جميع الأجهزة على شبكة WLAN باستخدام عناوين بث متعدد، وليس باستخدام هاتفك فقط. ويؤدي هذا إلى استخدام قدر أكبر من الطاقة يفوق وضع البث غير المتعدد.</string>
+    <string name="wifi_available_sign_in">تسجيل الدخول إلى شبكة WLAN</string>
+    <string name="wifi_watchdog_network_disabled">تعذر الاتصال بـ WLAN</string>
+    <string name="wifi_p2p_dialog_title">WLAN Direct</string>
+    <string name="wifi_p2p_turnon_message">ابدأ تشغيل WLAN Direct. سيؤدي هذا إلى إيقاف تشغيل عميل/النقطة الفعالة لشبكة WLAN.</string>
+    <string name="wifi_p2p_failed_message">تعذر بدء اتصال WLAN Direct</string>
+    <string name="wifi_p2p_enabled_notification_title">تم تشغيل WLAN Direct</string>
+    <string name="data_usage_wifi_limit_title">تم تعطيل بيانات WLAN</string>
+    <string name="data_usage_wifi_limit_snoozed_title">تم تجاوز حد بيانات WLAN</string>
+    <string name="ct_cplusw_notification_text">تم الاتصال بشبكة WLAN لشركة CT. اتصل برقم 10000أو المتجر المحلي لمعرفة معلومات الفوترة.</string>
+    <string name="ct_cplusw_notification_title">شبكة China Telecom WLAN متصلة</string>
+    <string name="ct_cplusw_pppoe_connection_dialog_content">ستقوم بالاتصال بشبكة WLAN اللاسلكية التابعة لـ China Telecom. لمعرفة التفاصيل حول الرسوم، الرجاء الاتصال بخدمة عملاء China Telecom. متابعة؟</string>
+    <string name="wifi_noncuncurrency_message">بدء عميل WLAN. سيؤدي ذلك إلى فصل WLAN Direct.</string>
+    <string name="wifi_p2p_noncuncurrency_invite_message">سيؤدي ذلك إلى فصل أي اتصال حالي بشبكة WLAN</string>
+    <string name="wifi_p2p_noncuncurrency_message">بدء WLAN Direct. سيؤدي ذلك إلى فصل اتصال WLAN.</string>
+</resources>

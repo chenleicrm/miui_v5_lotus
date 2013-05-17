@@ -1,0 +1,19 @@
+*** ./smali/com/android/server/BackupManagerService$PerformFullRestoreTask.smali	2013-05-06 10:07:39.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/services.jar.out/./smali/com/android/server/BackupManagerService$PerformFullRestoreTask.smali	2013-05-06 10:09:48.000000000 +0200
+***************
+*** 1460,1466 ****
+      move-result v7
+  
+      .local v7, didRead:I
+!     if-ltz v7, :cond_0
+  
+      move-object/from16 v0, p0
+  
+--- 1460,1466 ----
+      move-result v7
+  
+      .local v7, didRead:I
+!     if-ltz v7, :cond_2
+  
+      move-object/from16 v0, p0
+  

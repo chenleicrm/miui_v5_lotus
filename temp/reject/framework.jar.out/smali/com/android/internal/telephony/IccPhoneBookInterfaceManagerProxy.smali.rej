@@ -1,0 +1,30 @@
+*** IccPhoneBookInterfaceManagerProxy.smali	2013-05-06 10:07:45.000000000 +0200
+--- IccPhoneBookInterfaceManagerProxy.smali	2013-05-06 10:09:54.000000000 +0200
+***************
+*** 35,40 ****
+  
+  
+  # virtual methods
+  .method public getAdnRecordsInEf(I)Ljava/util/List;
+      .locals 1
+      .parameter "efid"
+--- 35,53 ----
+  
+  
+  # virtual methods
++ .method public getAdnCapacity()I
++     .locals 1
++ 
++     .prologue
++     iget-object v0, p0, Lcom/android/internal/telephony/IccPhoneBookInterfaceManagerProxy;->mIccPhoneBookInterfaceManager:Lcom/android/internal/telephony/IccPhoneBookInterfaceManager;
++ 
++     invoke-virtual {v0}, Lcom/android/internal/telephony/IccPhoneBookInterfaceManager;->getAdnCapacity()I
++ 
++     move-result v0
++ 
++     return v0
++ .end method
++ 
+  .method public getAdnRecordsInEf(I)Ljava/util/List;
+      .locals 1
+      .parameter "efid"

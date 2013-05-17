@@ -1,0 +1,19 @@
+*** ./smali/android/webkit/WebViewClassic.smali	2013-05-06 10:07:57.000000000 +0200
+--- /root/micode/lotus/temp/new_smali/framework.jar.out/./smali/android/webkit/WebViewClassic.smali	2013-05-06 10:10:10.000000000 +0200
+***************
+*** 20952,20958 ****
+      goto :goto_0
+  .end method
+  
+! .method sendOurVisibleRect()Landroid/graphics/Rect;
+      .locals 4
+  
+      .prologue
+--- 20952,20958 ----
+      goto :goto_0
+  .end method
+  
+! .method public sendOurVisibleRect()Landroid/graphics/Rect;
+      .locals 4
+  
+      .prologue

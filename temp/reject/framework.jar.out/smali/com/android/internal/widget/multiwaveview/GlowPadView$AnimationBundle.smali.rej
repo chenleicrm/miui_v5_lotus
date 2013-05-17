@@ -1,0 +1,50 @@
+*** GlowPadView$AnimationBundle.smali	2013-05-06 10:07:42.000000000 +0200
+--- GlowPadView$AnimationBundle.smali	2013-05-06 10:09:51.000000000 +0200
+***************
+*** 4,15 ****
+  
+  
+  # annotations
+  .annotation system Ldalvik/annotation/EnclosingClass;
+      value = Lcom/android/internal/widget/multiwaveview/GlowPadView;
+  .end annotation
+  
+  .annotation system Ldalvik/annotation/InnerClass;
+!     accessFlags = 0x2
+      name = "AnimationBundle"
+  .end annotation
+  
+--- 4,19 ----
+  
+  
+  # annotations
++ .annotation build Landroid/annotation/MiuiHook;
++     value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_ACCESS:Landroid/annotation/MiuiHook$MiuiHookType;
++ .end annotation
++ 
+  .annotation system Ldalvik/annotation/EnclosingClass;
+      value = Lcom/android/internal/widget/multiwaveview/GlowPadView;
+  .end annotation
+  
+  .annotation system Ldalvik/annotation/InnerClass;
+!     accessFlags = 0x0
+      name = "AnimationBundle"
+  .end annotation
+  
+***************
+*** 34,40 ****
+  
+  
+  # direct methods
+! .method private constructor <init>(Lcom/android/internal/widget/multiwaveview/GlowPadView;)V
+      .locals 0
+      .parameter
+  
+--- 38,44 ----
+  
+  
+  # direct methods
+! .method constructor <init>(Lcom/android/internal/widget/multiwaveview/GlowPadView;)V
+      .locals 0
+      .parameter
+  
