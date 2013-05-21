@@ -127,10 +127,8 @@
 
     monitor-enter p0
 
-    const/4 v0, 0x0
-
     :try_start_0
-    invoke-direct {p0, v0}, Landroid/content/res/AssetManager;->init(Z)V
+    invoke-direct {p0}, Landroid/content/res/AssetManager;->init()V
 
     invoke-static {}, Landroid/content/res/AssetManager;->ensureSystemAssets()V
 
@@ -182,7 +180,7 @@
 
     iput-boolean v1, p0, Landroid/content/res/AssetManager;->mOpen:Z
 
-    invoke-direct {p0, v1}, Landroid/content/res/AssetManager;->init(Z)V
+    invoke-direct {p0}, Landroid/content/res/AssetManager;->init()V
 
     invoke-static {p0}, Landroid/app/MiuiThemeHelper;->addExtraAssetPaths(Landroid/content/res/AssetManager;)V
 
@@ -463,7 +461,7 @@
     return-void
 .end method
 
-.method private final native init(Z)V
+.method private final native init()V
 .end method
 
 .method private final synchronized native declared-synchronized loadResourceBagValue(IILandroid/util/TypedValue;Z)I
