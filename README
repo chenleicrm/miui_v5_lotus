@@ -1,0 +1,44 @@
+Micode JB Patchrom folder for Xperia Go
+=======================================
+
+
+
+Get started
+----------------
+
+ $ cd /root
+ $ mkdir micode
+ $ cd micode
+ $ git clone -b jellybean git://github.com/MiCode/patchrom_android.git android
+ $ git clone -b jellybean git://github.com/MiCode/patchrom_build.git build
+ $ git clone -b jellybean git://github.com/MiCode/patchrom_miui.git miui
+ $ git clone -b jellybean git://github.com/MiCode/patchrom_tools.git tools
+ $ git clone -b master git://github.com/munjeni/miui_v5_lotus.git lotus
+
+ - copy zipalign from my MIUI V4 git to the tools folder
+
+
+
+Export path
+-----------
+
+ $ . build/envsetup.sh
+ $ export PATH=$PATH:/root/micode/tools
+
+
+
+Build your rom
+--------------
+
+ $ cd lotus
+ $ make fullota
+
+You will get error on framework.jar, so you need to build manyally framework.jar by apktool frameworkeee.jar.out
+Copy compiled frameworkeee.jar.out/dist/frameworkeee.jar to the out/framework.jar
+ $ cp -fr frameworkeee.jar.out/dist/frameworkeee.jar out/framework.jar
+ $ echo "" >out/out/framework.jar.tozip
+Continue build
+ $ make fullota
+After everything is compiled, you need to manyally fix updater-script from zip!
+
+This is only short explanation how I got rom compiled, we need to make everything propertly pathed after we get working rom! 
