@@ -41,4 +41,5 @@ Continue build
  $ make fullota
 After everything is compiled, you need to manyally fix updater-script from zip!
 
-This is only short explanation how I got rom compiled, we need to make everything propertly pathed after we get working rom! 
+This is only short explanation how I got rom compiled, we need to make everything propertly patched after we get working rom!
+I will try to fix patchrom and make them full optimised for building Lotus MIUI V5 as soon as we get rom working. 
