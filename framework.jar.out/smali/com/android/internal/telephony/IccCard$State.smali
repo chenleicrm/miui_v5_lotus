@@ -36,6 +36,8 @@
 
 .field public static final enum PERSO_LOCKED:Lcom/android/internal/telephony/IccCard$State;
 
+.field public static final enum NETWORK_LOCKED:Lcom/android/internal/telephony/IccCard$State;
+
 .field public static final enum PIN_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
 
 .field public static final enum PUK_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
@@ -47,9 +49,11 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 9
 
     .prologue
+    const/4 v8, 0x4
+
     const/4 v7, 0x4
 
     const/4 v6, 0x3
@@ -104,6 +108,14 @@
     invoke-direct {v0, v1, v7}, Lcom/android/internal/telephony/IccCard$State;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Lcom/android/internal/telephony/IccCard$State;->PERSO_LOCKED:Lcom/android/internal/telephony/IccCard$State;
+
+    new-instance v0, Lcom/android/internal/telephony/IccCard$State;
+
+    const-string v1, "NETWORK_LOCKED"
+
+    invoke-direct {v0, v1, v8}, Lcom/android/internal/telephony/IccCard$State;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/android/internal/telephony/IccCard$State;->NETWORK_LOCKED:Lcom/android/internal/telephony/IccCard$State;
 
     .line 77
     new-instance v0, Lcom/android/internal/telephony/IccCard$State;
@@ -173,6 +185,10 @@
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PERSO_LOCKED:Lcom/android/internal/telephony/IccCard$State;
 
     aput-object v1, v0, v7
+
+    sget-object v1, Lcom/android/internal/telephony/IccCard$State;->NETWORK_LOCKED:Lcom/android/internal/telephony/IccCard$State;
+
+    aput-object v1, v0, v8
 
     const/4 v1, 0x5
 
@@ -417,6 +433,10 @@
     if-eq p0, v0, :cond_0
 
     sget-object v0, Lcom/android/internal/telephony/IccCard$State;->PERSO_LOCKED:Lcom/android/internal/telephony/IccCard$State;
+
+    if-eq p0, v0, :cond_0
+
+    sget-object v0, Lcom/android/internal/telephony/IccCard$State;->NETWORK_LOCKED:Lcom/android/internal/telephony/IccCard$State;
 
     if-eq p0, v0, :cond_0
 
