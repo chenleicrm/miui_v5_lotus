@@ -72834,7 +72834,7 @@
 
     move/from16 v0, v23
 
-    move-object/from16 v1, v28
+    move-object/from16 v1, v31
 
     invoke-static {v0, v1, v2, v3}, Landroid/app/MiuiThemeHelper;->handleExtraConfigurationChanges(ILandroid/content/res/Configuration;Landroid/content/Context;Landroid/os/Handler;)V
 

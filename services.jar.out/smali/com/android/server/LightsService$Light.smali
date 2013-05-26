@@ -175,8 +175,8 @@
     .line 115
     monitor-enter p0
 
-    .line 116
-    const/4 v1, 0x0
+    :try_start_0
+    iget v1, p0, Lcom/android/server/LightsService$Light;->mColor:I
 
     const/4 v2, 0x0
 
@@ -188,8 +188,7 @@
 
     move-object v0, p0
 
-    :try_start_0
-    invoke-direct/range {v0 .. v5}, Lcom/android/server/LightsService$Light;->setLightLocked(IIIII)V
+    invoke-virtual/range {v0 .. v5}, Lcom/android/server/LightsService$Light;->setLightLocked(IIIII)V
 
     .line 117
     monitor-exit p0
